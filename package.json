@@ -9,7 +9,7 @@
         "node": ">=6.9.1"
     },
     "scripts": {
-        "start": "node index.js"
+        "start": "node spikes/reqTickByTickData.js"
     },
     "dependencies": {
         "chalk": "^2.4.1",
