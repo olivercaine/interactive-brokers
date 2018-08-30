@@ -1,0 +1,17 @@
+{
+    "name": "interactive-brokers",
+    "description": "Simple Hello World Node.js",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "ib": "^0.2.5"
+    }
+}
