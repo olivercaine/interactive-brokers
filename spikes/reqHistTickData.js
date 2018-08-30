@@ -1,7 +1,7 @@
 var _ = require('lodash');
 var chalk = require('chalk');
 
-var ib = new(require('..'))({
+var ib = new(require('ib'))({
   clientId: '1586293', // maybe prepend with U
   host: '127.0.0.1',
   port: 7496
