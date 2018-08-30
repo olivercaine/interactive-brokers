@@ -12,6 +12,8 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "ib": "^0.2.5"
+        "chalk": "^2.4.1",
+        "ib": "^0.2.5",
+        "lodash": "^4.17.10"
     }
 }
