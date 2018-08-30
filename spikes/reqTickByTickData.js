@@ -50,7 +50,7 @@ ib.reqTickByTickData(1, ib.contract.stock('SPY', 'SMART', 'USD'), 'BidAsk', 0, f
 //ib.reqTickByTickData(1, ib.contract.stock('SPY', 'SMART', 'USD'), 'Last', 0, false)
 //ib.reqTickByTickData(1, ib.contract.stock('SPY', 'SMART', 'USD'), 'MidPoint', 0, false)
 
-setTimeout(() => {
+setInterval(() => {
   console.log(
     '%s %s%d',
     chalk.cyan('sending [cancelTickByTickData]'),
