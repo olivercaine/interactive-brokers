@@ -1,13 +1,44 @@
 import React from 'react'
-import DuckImage from '../assets/Duck.jpg'
 import './HomeView.scss'
-import { sayWelcome } from '../../Home/components/StringUtil'
+var beepLow = require('browser-beep')({ frequency: 500 })
+var beepHigh = require('browser-beep')({ frequency: 1000 })
 
-export const HomeView = () => (
-  <div>
-    <h4>{sayWelcome('Welcome!')}</h4>
-    <img alt='This is a duck, because Redux!' className='duck' src={DuckImage} />
-  </div>
-)
+export default class extends React.Component {
+  constructor (props) {
+    super(props)
+        // this.handleScroll = this.handleScroll.bind(this)
+        // this.state = {
+        //     from: 100,
+        //     to: 0,
+        //     scrolledPastHeader: false,
+        // }
+  }
 
-export default HomeView
+  componentDidMount () {
+        // window.addEventListener('scroll', this.handleScroll)
+        // this.moveToLookingFor()
+        // this.isDesktop()
+  }
+
+  componentWillUnmount () {
+        // window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  playSound (number) {
+    beep(number)
+  }
+
+  render () {
+        // const { filterSet, results, requirements, me } = this.props
+
+    // let lol = this.playSound(1)
+    // let lol2 = this.playSound(2)
+
+    return (
+      <div>
+        <button onClick={() => beepLow(1)}>Click</button>
+        <button onClick={() => beepHigh(1)}>Click</button>
+      </div>
+    )
+  }
+}
