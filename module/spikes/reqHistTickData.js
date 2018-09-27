@@ -3,7 +3,7 @@ var chalk = require('chalk');
 
 var ib = new(require('ib'))({
   clientId: '1586293', // maybe prepend with U
-  host: '127.0.0.1',
+  host: '192.168.1.2',
   port: 7496
 }).on('error', (err) => {
   console.error(chalk.red(err.message));
